@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Función para mostrar/ocultar la tabla
+        function toggleTable() {
+            var table = document.querySelector(".group-table");
+            if (table.style.display === "none" || table.style.display === "") {
+                table.style.display = "table"; // Muestra la tabla
+            } else {
+                table.style.display = "none";  // Oculta la tabla
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Asir Tech</h1>
+        <img src="media/AuDqRoFT_400x400.jpg" alt="Imagen centrada" class="zoom-image">
+
+        <!-- Menú para mostrar la tabla -->
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleTable()">Mostrar/Ocultar Tabla</a></li>
+            </ul>
+        </nav>
+
+        <!-- Tabla oculta inicialmente -->
+        <table class="group-table" style="display: none;">
+            <thead>
+                <tr><th>Nombre</th><th>Edad</th><th>Estudios</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Nico Del Campo</td><td>20</td><td>Bachiller</td></tr>
+                <tr><td>Mikel Rubio</td><td>21</td><td>Bachiller</td></tr>
+                <tr><td>Ane Abad</td><td>18</td><td>SMR</td></tr>
+                <tr><td>Naroa Gándara</td><td>20</td><td>SMR</td></tr>
+                <tr><td>Joel Alpire</td><td>18</td><td>Bachiller</td></tr>
+                <tr><td>Fernando Rocca</td><td>25</td><td>Bachiller</td></tr>
+                <tr><td>Iker Elorduy</td><td>22</td><td>DAM</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
