@@ -1,0 +1,65 @@
+/* Estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(224, 161, 161);
+}
+
+/* Imagen con efecto zoom al pasar el ratón */
+.zoom-image {
+    width: 100px;
+    height: 100px;
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto zoom cuando el ratón está sobre la imagen */
+.zoom-image:hover {
+    transform: scale(1.2);
+}
+
+/* Tabla de integrantes */
+table {
+    background-color: white;
+    width: 60%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    transition: transform 0.3s ease;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Efecto de agrandamiento de la tabla al hacer clic */
+.group-table:active {
+    transform: scale(1.1);
+}
+
+/* Estilo para la tabla */
+.group-table {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
